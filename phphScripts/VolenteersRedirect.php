@@ -8,7 +8,7 @@ function simple_url_redirect() {
 
     if (rtrim($path, '/') === '/volenrersqrcode') {
 		echo '    <script>
-        const targetLat = ' . $config["latatude"] . '; // Sydney example
+        const targetLat = ' . $config["latatude"] . '; 
         const targetLon = ' . $config["logditude"] . ';
         function getLocationAndRedirect() {
 
@@ -38,7 +38,6 @@ function simple_url_redirect() {
             });
         }
 
-        // Run on page load
         window.onload = getLocationAndRedirect;
         function isWithinevent(lat1, lon1, lat2, lon2) {
 
