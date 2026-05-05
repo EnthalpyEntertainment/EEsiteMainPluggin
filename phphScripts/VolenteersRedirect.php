@@ -2,11 +2,7 @@
 function simple_url_redirect() {
 	
 	
-	$config = [
-		"volentersQrRedirect" => "https://docs.google.com/forms/d/e/1FAIpQLSfSLBE9VGfU3EIsayrkXB0F7MdBTrHy4Ugxo1kyEIi3A9isoQ/viewform?usp=header",
-		"latatude" => '34.878167',
-		"logditude" =>'150.603917',
-	];
+	$config = require_once __DIR__ . '/config.php';
 
     $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
