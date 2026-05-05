@@ -19,4 +19,7 @@ $updateChecker = PucFactory::buildUpdateChecker(
 );
 $updateChecker->setBranch('main');
 //auto update
+
+require_once __DIR__ . '/phphScripts/VolenteersRedirect.php';//qrcoderedirect
+
 ?>
