@@ -2,7 +2,7 @@
 function simple_url_redirect() {
 	
 	
-	$config = require_once __DIR__ . '/config.php';
+	$config = require_once plugin_dir_path(__FILE__) . '../config.php';
 
     $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
