@@ -13,13 +13,20 @@ $apiKey = 'gfdg44353653test';
 require_once __DIR__ . '/plugin-update-checker-master/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $updateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/samverheyden/google-api-php-client-main/',
+    'https://github.com/EnthalpyEntertainment/EEsiteMainPluggin/',
     __FILE__,
-    'google-api-php-client-main'
+    'EEsiteMainPluggin'
 );
 $updateChecker->setBranch('main');
+// FORCE AUTO-UPDATES 
+add_filter('auto_update_plugin', function ($update, $item) {
+    $plugin_slug = plugin_basename(__FILE__);
+    if ($item->plugin === $plugin_slug) {
+        return true; 
+    }
+    return $update;
+}, 10, 2);
 //auto update
-
 require_once __DIR__ . '/phphScripts/VolenteersRedirect.php';//qrcoderedirect
 
 ?>
