@@ -63,7 +63,7 @@ function simple_url_redirect() {
 
 
     </script>
-    <h2 id="headingid">if you dont redirect reload page</h2>';
+        <h2 id="headingid" style="text-align:center;padding-top:40px">if you dont redirect reload page</h2>';
 
     }
 }
