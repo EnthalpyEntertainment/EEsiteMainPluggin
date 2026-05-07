@@ -32,8 +32,20 @@ function save_plugin_conf_eemaster($data)
 
     return true;
 }
+
 function Generate_config_settings_page_eemaster(){
         	$config = require_once plugin_dir_path(__FILE__) . '../config.php';
+
+echo '    <style>
+        .config_rowstyleing_eeplugin{
+
+        }
+        .config_rowstyleing_eeplugin_rowname {
+        }
+
+    </style>';
+    
+echo '    <span class="config_rowstyleing_eeplugin"><span class="config_rowstyleing_eeplugin_rowname"> heading</span>longtitude<input id="logditudeelement" type="number"/>latitude <input id="latitudeelement" type="number" /></span>';
 }
     
 
