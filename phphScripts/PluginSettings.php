@@ -33,7 +33,7 @@ function save_plugin_conf_eemaster($data)
     return true;
 }
 function Generate_config_settings_page_eemaster(){
-        $config = require plugin_dir_path(__FILE__) . '../config.php';
+        	$config = require_once plugin_dir_path(__FILE__) . '../config.php';
 }
     
 
