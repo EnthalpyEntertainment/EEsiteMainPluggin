@@ -29,3 +29,4 @@ add_filter('auto_update_plugin', function ($update, $item) {
 //auto update
 require_once __DIR__ . '/phphScripts/VolenteersRedirect.php';//qrcoderedirect
 require_once __DIR__ . '/phphScripts/PluginSettings.php'; //settings page
+?>
